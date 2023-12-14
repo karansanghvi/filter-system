@@ -1,11 +1,9 @@
-import React from 'react'
-
-function Button() {
+const Button = ({ onClickHandler, value, title }) => {
   return (
-    <div>
-      Buttons
-    </div>
-  )
-}
+    <button onClick={onClickHandler} value={value} className="btns">
+      {title}
+    </button>
+  );
+};
 
-export default Button
+export default Button;
